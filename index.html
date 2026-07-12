@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isac Cavalheiro — Desenvolvedor Web & Designer UI/UX em Osasco/SP. Crio sites e landing pages profissionais que convertem visitantes em clientes.">
+  <meta name="keywords" content="desenvolvedor web, web designer, UI/UX, landing page, Osasco, freelancer">
+  <meta name="author" content="Isac Cavalheiro">
+  <meta property="og:title" content="Isac Cavalheiro | Desenvolvedor Web & Designer UI/UX">
+  <meta property="og:description" content="Sites e landing pages profissionais para o seu negócio crescer online.">
+  <meta property="og:type" content="website">
+  <title>Isac Cavalheiro | Desenvolvedor Web & Designer UI/UX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD - Dados Estruturados para SEO Local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Isac Cavalheiro | Desenvolvedor Web & Designer UI/UX",
+    "image": "https://isaccavalheiro.com/images/hero.png",
+    "@id": "https://isaccavalheiro.com",
+    "url": "https://isaccavalheiro.com",
+    "telephone": "+5511969527161",
+    "priceRange": "R$1500 - R$3850",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Osasco",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <img src="images/logo.jpg" alt="Isac Cavalheiro - Logo" class="nav__logo-img">
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link active">Início</a></li>
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#precos" class="nav__link">Preços</a></li>
+        <li><a href="#contato" class="nav__link nav__link--cta">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <p class="hero__greeting">Olá, eu sou</p>
+          <h1 class="hero__title">
+            Isac Cavalheiro
+            <span class="hero__title-accent">Desenvolvedor Web & Designer UI/UX</span>
+          </h1>
+          <p class="hero__description">
+            Transformo ideias em sites profissionais que geram confiança e convertem visitantes em clientes.
+            Do layout ao código, entrego tudo pronto para o seu negócio crescer online.
+          </p>
+          <div class="hero__buttons">
+            <a href="#contato" class="btn btn--primary">Solicitar orçamento</a>
+            <a href="#portfolio" class="btn btn--outline">Ver projetos</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://www.instagram.com/isacwebdesign/?__pwa=1" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil do Instagram de Isac Cavalheiro">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 3a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-1.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z"/></svg>
+            </a>
+            <a href="https://github.com/isac-squall" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil do GitHub de Isac Cavalheiro">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <span class="hero__image-badge hero__image-badge--top">UI/UX</span>
+          <span class="hero__image-badge hero__image-badge--middle">JavaScript</span>
+          <span class="hero__image-badge hero__image-badge--bottom">HTML/CSS</span>
+          <!-- Width e Height explícitos para evitar quebra de layout durante a renderização (CLS) -->
+          <img src="images/isac.webp" alt="Isac Cavalheiro — Desenvolvedor Web trabalhando com código e design" width="600" height="520" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="servicos section" id="servicos">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">O que eu faço</span>
+          <h2 class="section__title">Serviços</h2>
+          <p class="section__subtitle">Soluções completas para sua presença digital</p>
+        </div>
+        <div class="servicos__grid">
+          <article class="servico__card">
+            <div class="servico__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites responsivos, rápidos e otimizados com HTML, CSS e JavaScript. Código limpo e pronto para escalar.</p>
+          </article>
+          <article class="servico__card">
+            <div class="servico__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Design UI/UX</h3>
+            <p>Interfaces modernas e intuitivas, pensadas para guiar o usuário até a ação — seja comprar, agendar ou entrar em contato.</p>
+          </article>
+          <article class="servico__card">
+            <div class="servico__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Landing Pages</h3>
+            <p>Páginas de alta conversão com CTAs estratégicos, integração com WhatsApp e design focado em resultados.</p>
+          </article>
+          <article class="servico__card">
+            <div class="servico__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <h3>Marketing Digital</h3>
+            <p>Estruturação de páginas com SEO básico, hierarquia visual e copy voltada para atrair e converter clientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Trabalhos recentes</span>
+          <h2 class="section__title">Portfólio</h2>
+          <p class="section__subtitle">Projetos reais desenvolvidos para clientes</p>
+        </div>
+        <div class="portfolio__grid">
+
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="images/projeto-nail.png" alt="Landing page Curso Nail Designer" width="400" height="280" loading="lazy">
+              <div class="portfolio__overlay">
+                <a href="https://site-dayanenail.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Ver ao vivo</a>
+              </div>
+            </div>
+            <div class="portfolio__info">
+              <span class="portfolio__tag">Landing Page</span>
+              <h3>Curso Nail Designer</h3>
+              <p>Landing page de alta conversão para curso profissional, com CTAs, prova social e integração WhatsApp.</p>
+              <div class="portfolio__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="images/projeto-advogado.png" alt="Site institucional Dr. Renato Advogado" width="400" height="280" loading="lazy">
+              <div class="portfolio__overlay">
+                <a href="https://site-do-advogado-dr-renato-824p2n8dv.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Ver ao vivo</a>
+              </div>
+            </div>
+            <div class="portfolio__info">
+              <span class="portfolio__tag">Site Institucional</span>
+              <h3>Dr. Renato — Advogado</h3>
+              <p>Site profissional para escritório de advocacia, transmitindo autoridade e facilitando o contato com clientes.</p>
+              <div class="portfolio__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="images/projeto-renato-campanha.png" alt="Site Dr. Renato Advogado" width="400" height="280" loading="lazy">
+              <div class="portfolio__overlay">
+                <a href="https://renato-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Ver ao vivo</a>
+              </div>
+            </div>
+            <div class="portfolio__info">
+              <span class="portfolio__tag">Site Institucional</span>
+              <h3>Dr. Renato — Deputado</h3>
+              <p>Site para campanha política com foco em transparência e engajamento com a sociedade.</p>
+              <div class="portfolio__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="images/projeto-agencia.png" alt="Repositório do projeto ecloud Assessoria SEO" width="400" height="280" loading="lazy">
+              <div class="portfolio__overlay">
+                <span class="portfolio__badge">Projeto demonstrativo</span>
+                <!-- Link estratégico adicionado para direcionar o usuário ao repositório do código -->
+                <a href="https://github.com/isac-squall" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Ver Código</a>
+              </div>
+            </div>
+            <div class="portfolio__info">
+              <span class="portfolio__tag">Site Corporativo</span>
+              <h3>ecloud Assessoria</h3>
+              <p>Site para agência de SEO e marketing digital, com prova social, numbers reais e layout corporativo moderno.</p>
+              <div class="portfolio__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+<article class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="images/projeto-dentista.png" alt="Repositório do projeto Dr. Edimilson SEO" width="400" height="280" loading="lazy">
+              <div class="portfolio__overlay">
+                <span class="portfolio__badge">Projeto demonstrativo</span>
+                <!-- Link estratégico adicionado para direcionar o usuário ao repositório do código -->
+                <a href="https://github.com/isac-squall" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Ver Código</a>
+              </div>
+            </div>
+            <div class="portfolio__info">
+              <span class="portfolio__tag">Site Corporativo</span>
+              <h3>Dr. Edimilson</h3>
+              <p>Site para dentista, com agenda online, depoimentos e informações clínicas.</p>
+              <div class="portfolio__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img src="images/mini.webp" alt="Repositório do projeto Mini" width="400" height="280" loading="lazy">
+              <div class="portfolio__overlay">
+                <span class="portfolio__badge">Projeto demonstrativo</span>
+                <!-- Link estratégico adicionado para direcionar o usuário ao repositório do código -->
+                <a href="https://github.com/isac-squall" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Ver Código</a>
+              </div>
+            </div>
+            <div class="portfolio__info">
+              <span class="portfolio__tag">Site Corporativo</span>
+              <h3>Projeto De Agencia Digital</h3>
+              <p>Site para agência de marketing digital, com prova social, numbers reais e layout corporativo moderno.</p>
+              <div class="portfolio__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre section" id="sobre">
+      <div class="container">
+        <div class="sobre__grid">
+          <div class="sobre__content">
+            <span class="section__tag">Quem sou eu</span>
+            <h2 class="section__title">Sobre mim</h2>
+            <p>
+              Sou <strong>Isac Cavalheiro</strong>, desenvolvedor web e designer UI/UX de <strong>Osasco/SP</strong>,
+              com <strong>2 anos de experiência</strong> criando sites e landing pages para negócios reais.
+            </p>
+            <p>
+              Formado em <strong>Gestão de Tecnologias e Informações</strong> pela Estácio de Sá, combino código limpo
+              com design estratégico para entregar páginas rápidas, responsivas e focadas em resultados.
+            </p>
+            <p>
+              Já desenvolvi projetos para áreas como educação, advocacia, saúde e marketing — sempre adaptando o visual
+              e a linguagem ao público de cada cliente.
+            </p>
+            <div class="sobre__skills">
+              <h3>Habilidades</h3>
+              <div class="skills__list">
+                <div class="skill">
+                  <div class="skill__header">
+                    <span>HTML & CSS</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="skill__bar"><div class="skill__fill skill__fill--95"></div></div>
+                </div>
+                <div class="skill">
+                  <div class="skill__header">
+                    <span>JavaScript</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill__bar"><div class="skill__fill skill__fill--85"></div></div>
+                </div>
+                <div class="skill">
+                  <div class="skill__header">
+                    <span>UI/UX Design</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill__bar"><div class="skill__fill skill__fill--90"></div></div>
+                </div>
+                <div class="skill">
+                  <div class="skill__header">
+                    <span>Python</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill__bar"><div class="skill__fill skill__fill--70"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sobre__timeline">
+            <h3>Formação & Experiência</h3>
+            <div class="timeline">
+              <div class="timeline__item">
+                <span class="timeline__date">2023 — Atual</span>
+                <h4>Freelancer — Dev Web & UI/UX</h4>
+                <p>Desenvolvimento de sites e landing pages para clientes de diversos segmentos.</p>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__date">2024</span>
+                <h4>Graduação — Estácio de Sá</h4>
+                <p>Gestão de Tecnologias e Informações.</p>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__date">2022</span>
+                <h4>Início na área</h4>
+                <p>Primeiros projetos freelance em desenvolvimento web e design de interfaces.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos section" id="depoimentos">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Feedback</span>
+          <h2 class="section__title">O que dizem sobre meu trabalho</h2>
+        </div>
+        <div class="depoimentos__grid">
+          <blockquote class="depoimento__card">
+            <p>"O Isac entendeu exatamente o que meu negócio precisava. O site ficou profissional, rápido e já estou recebendo contatos pelo WhatsApp."</p>
+            <footer>
+              <strong>Cliente — Curso Nail Designer</strong>
+              <span>Landing Page</span>
+            </footer>
+          </blockquote>
+          <blockquote class="depoimento__card">
+            <p>"Entrega no prazo, comunicação clara e um resultado visual que transmite autoridade. Recomendo para quem precisa de presença digital séria."</p>
+            <footer>
+              <strong>Cliente — Escritório de Advocacia</strong>
+              <span>Site Institucional</span>
+            </footer>
+          </blockquote>
+          <blockquote class="depoimento__card">
+            <p>"Cuidou do design e do código no mesmo projeto. Economizei tempo e o site ficou muito acima do que eu esperava."</p>
+            <footer>
+              <strong>Cliente — Área da Saúde</strong>
+              <span>Site Institucional</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preços -->
+    <section class="precos section" id="precos">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Investimento</span>
+          <h2 class="section__title">Pacotes de serviço</h2>
+          <p class="section__subtitle">Escolha o plano ideal para o seu projeto</p>
+        </div>
+        <div class="precos__grid">
+          <article class="preco__card">
+            <h3>Básico</h3>
+            <div class="preco__valor">
+              <span class="preco__moeda">R$</span>
+              <span class="preco__numero">1.500</span>
+            </div>
+            <p class="preco__desc">Ideal para quem precisa de presença online rápida</p>
+            <ul class="preco__features">
+              <li>Landing page de 1 página</li>
+              <li>Design responsivo</li>
+              <li>Integração WhatsApp</li>
+              <li>Entrega em até 7 dias</li>
+              <li>1 revisão inclusa</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline btn--block">Solicitar orçamento</a>
+          </article>
+          <article class="preco__card preco__card--destaque">
+            <span class="preco__badge">Mais popular</span>
+            <h3>Padrão</h3>
+            <div class="preco__valor">
+              <span class="preco__moeda">R$</span>
+              <span class="preco__numero">2.500</span>
+            </div>
+            <p class="preco__desc">Para negócios que querem um site completo</p>
+            <ul class="preco__features">
+              <li>Site de até 5 páginas</li>
+              <li>Design UI/UX personalizado</li>
+              <li>SEO básico configurado</li>
+              <li>Integração WhatsApp + formulário</li>
+              <li>Entrega em até 14 dias</li>
+              <li>2 revisões inclusas</li>
+            </ul>
+            <a href="#contato" class="btn btn--primary btn--block">Solicitar orçamento</a>
+          </article>
+          <article class="preco__card">
+            <h3>Premium</h3>
+            <div class="preco__valor">
+              <span class="preco__moeda">R$</span>
+              <span class="preco__numero">3.850</span>
+            </div>
+            <p class="preco__desc">Solução completa para destacar sua marca</p>
+            <ul class="preco__features">
+              <li>Site completo + landing pages</li>
+              <li>Design premium exclusivo</li>
+              <li>SEO avançado</li>
+              <li>Animações e interações</li>
+              <li>Suporte por 30 dias</li>
+              <li>Revisões ilimitadas</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline btn--block">Solicitar orçamento</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato section" id="contato">
+      <div class="container">
+        <div class="contato__grid">
+          <div class="contato__info">
+            <span class="section__tag">Fale comigo</span>
+            <h2 class="section__title">Vamos trabalhar juntos?</h2>
+            <p>Estou disponível para novos projetos. Envie uma mensagem e retorno em até 24 hours.</p>
+            <ul class="contato__details">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Osasco, São Paulo — Brasil</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:contato@isaccavalheiro.com">contato@isaccavalheiro.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <a href="https://www.instagram.com/isacwebdesign/?__pwa=1" target="_blank" rel="noopener noreferrer">instagram.com/isacwebdesign</a>
+              </li>
+            </ul>
+          </div>
+          <form class="contato__form" id="contact-form">
+            <div class="form__group">
+              <label for="nome">Nome</label>
+              <!-- Atributo autocomplete adicionado -->
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
+            </div>
+            <div class="form__group">
+              <label for="email">E-mail</label>
+              <!-- Atributo autocomplete adicionado -->
+              <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+            </div>
+            <div class="form__group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte sobre o seu projeto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Solicitar Orçamento Gratuito</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-accent">IC</span> Isac Cavalheiro
+        </a>
+        <p>Desenvolvedor Web & Designer UI/UX — Osasco/SP</p>
+      </div>
+      <div class="footer__links">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://github.com/isac-squall" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil do GitHub de Isac Cavalheiro">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/isacwebdesign/?__pwa=1" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil do Instagram de Isac Cavalheiro">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 3a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-1.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 Isac Cavalheiro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511969527161?text=Ol%C3%A1%20Isac!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" id="whatsapp-btn">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Voltar ao topo -->
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
