@@ -5,7 +5,6 @@
   --bg-card: #1a1a1a;
   --bg-card-hover: #222222;
   --accent: #00ff88;
-  --accent-secondary: #00e1ff;
   --accent-dark: #00cc6a;
   --accent-glow: rgba(0, 255, 136, 0.15);
   --text-primary: #ffffff;
@@ -129,18 +128,14 @@ button, input, textarea {
 }
 
 .btn--outline {
-  background: rgba(255, 255, 255, 0.03);
+  background: transparent;
   color: var(--text-primary);
-  border-color: rgba(255, 255, 255, 0.14);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  border-color: var(--border);
 }
 
 .btn--outline:hover {
-  border-color: transparent;
-  color: var(--text-primary);
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.18), rgba(0, 225, 255, 0.12));
-  box-shadow: 0 0 0 1px rgba(0, 255, 136, 0.24), 0 12px 26px rgba(0, 0, 0, 0.25);
-  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .btn--block {
@@ -183,20 +178,31 @@ button, input, textarea {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: all var(--transition);
+}
+
+.nav__logo:hover {
+  opacity: 0.8;
 }
 
 .nav__logo-img {
-  height: 100px;
-  width: auto;
-  object-fit: contain;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: all var(--transition);
+}
+
+.nav__logo:hover .nav__logo-img {
+  box-shadow: 0 0 16px var(--accent-glow);
 }
 
 .nav__logo-accent {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   background: var(--accent);
   color: var(--bg-primary);
   border-radius: 8px;
@@ -282,58 +288,18 @@ button, input, textarea {
 
 /* ===== HERO ===== */
 .hero {
-  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: var(--header-height);
-  background:
-    radial-gradient(circle at 15% 20%, rgba(0, 255, 136, 0.16) 0%, transparent 28%),
-    radial-gradient(circle at 85% 15%, rgba(0, 225, 255, 0.12) 0%, transparent 30%),
-    linear-gradient(135deg, rgba(10, 10, 10, 0.98) 0%, rgba(10, 10, 10, 0.92) 100%);
-  overflow: hidden;
-}
-
-.hero::before,
-.hero::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(140px);
-  opacity: 0.22;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero::before {
-  width: 320px;
-  height: 320px;
-  background: var(--accent);
-  top: -60px;
-  right: -40px;
-  animation: floatOrb 8s ease-in-out infinite alternate;
-}
-
-.hero::after {
-  width: 260px;
-  height: 260px;
-  background: var(--accent-secondary);
-  left: -70px;
-  bottom: 8%;
-  animation: floatOrb 10s ease-in-out infinite alternate-reverse;
+  background: radial-gradient(ellipse at 70% 50%, rgba(0, 255, 136, 0.06) 0%, transparent 60%);
 }
 
 .hero__container {
-  position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-}
-
-.hero__content {
-  animation: fadeInUp 0.8s ease both;
 }
 
 .hero__greeting {
@@ -347,15 +313,11 @@ button, input, textarea {
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 24px;
-  letter-spacing: -0.02em;
 }
 
 .hero__title-accent {
   display: block;
-  background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent);
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin-top: 8px;
 }
@@ -373,11 +335,6 @@ button, input, textarea {
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 40px;
-}
-
-.hero__buttons .btn {
-  animation: fadeInUp 0.95s ease both;
-  animation-delay: 0.15s;
 }
 
 .hero__social {
@@ -413,101 +370,56 @@ button, input, textarea {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
-  animation: fadeInUp 1s ease both;
+  border: 1px solid var(--border);
 }
 
 .hero__image::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), transparent 55%, rgba(0, 225, 255, 0.12));
+  background: linear-gradient(135deg, var(--accent-glow), transparent);
   z-index: 1;
   pointer-events: none;
-}
-
-.hero__image::after {
-  content: '';
-  position: absolute;
-  inset: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: calc(var(--radius-lg) - 6px);
-  pointer-events: none;
-  z-index: 2;
 }
 
 .hero__image img {
   width: 100%;
   border-radius: var(--radius-lg);
-  position: relative;
-  z-index: 0;
 }
 
+/* ===== HERO IMAGE BADGES ===== */
 .hero__image-badge {
   position: absolute;
-  z-index: 3;
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid var(--accent);
+  border-radius: 50px;
+  color: var(--accent);
   font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-weight: 600;
   text-transform: uppercase;
-  color: var(--text-primary);
-  animation: floatBadge 4.5s ease-in-out infinite;
+  letter-spacing: 1px;
+  backdrop-filter: blur(8px);
+  z-index: 10;
 }
 
 .hero__image-badge--top {
-  top: 18px;
-  left: 18px;
+  top: 20px;
+  left: 20px;
 }
 
 .hero__image-badge--middle {
-  top: 50%;
-  right: 18px;
-  transform: translateY(-50%);
-  animation-delay: 0.8s;
+  top: 20px;
+  right: 20px;
 }
 
 .hero__image-badge--bottom {
-  bottom: 18px;
-  left: 18px;
-  animation-delay: 1.4s;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes floatOrb {
-  from {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  to {
-    transform: translate3d(10px, 20px, 0) scale(1.04);
-  }
-}
-
-@keyframes floatBadge {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== SERVIÇOS ===== */
