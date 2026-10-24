@@ -868,6 +868,27 @@ button, input, textarea {
   margin-bottom: 12px;
 }
 
+.preco__pagamento {
+  display: grid;
+  gap: 5px;
+  padding: 12px 0 16px;
+  margin-bottom: 16px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.preco__pagamento strong {
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.preco__pagamento span {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .preco__moeda {
   font-size: 1.2rem;
   font-weight: 600;
